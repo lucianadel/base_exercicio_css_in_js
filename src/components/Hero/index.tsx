@@ -1,13 +1,17 @@
-import styles from './Hero.module.css'
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
+
+import { StyledForm, StyledFormDiv ,StyledHeroTitle } from "./Hero.module"
+
 
 const Hero = () => (
-  <form className={styles.form}>
-    <div className="container">
-      <h2 className={styles.heroTitle}>
+  <StyledForm>
+    <StyledFormDiv className="container">
+      <StyledHeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
-    </div>
-  </form>
+      </StyledHeroTitle>
+    </StyledFormDiv>
+  </StyledForm>
 )
 
 export default Hero
